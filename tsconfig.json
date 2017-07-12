@@ -6,7 +6,7 @@
     "lib": [
       "esnext"
     ],
-    "target": "es2015",
+    "target": "es6",
     "noImplicitAny": true,
     "outDir": "./lib",
     "preserveConstEnums": true,
@@ -20,6 +20,7 @@
   ],
   "exclude": [
     "node_modules",
-    "**/*-spec.ts"
+    "**/*.spec.ts",
+    "**/*.e2e.ts"
   ]
 }

@@ -18,7 +18,7 @@
   "typings": "lib/index.d.ts",
   "scripts": {
     "clean": "rimraf lib && rimraf coverage && rimraf .nyc_output && rimraf lib_test",
-    "lint": "tslint --force --format verbose \"src/**/*.ts\"",
+    "lint": "tslint --format verbose \"src/**/*.ts\"",
     "prepublish": "npm run build",
     "prebuild": "npm run clean && npm run lint && echo Using TypeScript && tsc --version",
     "build": "tsc --pretty",
