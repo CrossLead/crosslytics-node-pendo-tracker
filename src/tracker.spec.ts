@@ -33,7 +33,6 @@ test('Should return what you expect', async (t) => {
     Color: 'Blue',
   });
 
-  const tracker = new SampleTracker();
-  const result = await tracker.track(identity, event);
-  t.is(result, 'Great success');
+  const tracker = new SampleTracker('accountId');
+  await t.notThrows(tracker.track(event));
 });
