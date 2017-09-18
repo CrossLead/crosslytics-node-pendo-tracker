@@ -7,10 +7,11 @@ interface LightsaberArgs {
   'Blades': number;
 }
 
-class LightsaberBuilt extends TrackedEvent<LightsaberArgs> {
+class LightsaberBuilt implements TrackedEvent<LightsaberArgs> {
   public name = 'Lightsaber Built';
   public category = 'Lightsabers';
   public argPriority = new Array<keyof LightsaberArgs>('Blades', 'Color');
+  constructor(public args: LightsaberArgs) {}
 }
 
 test('Should return what you expect', async (t) => {
