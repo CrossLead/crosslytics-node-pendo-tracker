@@ -11,12 +11,14 @@
     "outDir": "./lib",
     "preserveConstEnums": true,
     "removeComments": true,
+    "skipLibCheck": true,
     "typeRoots": [
       "./node_modules/@types"
     ]
   },
   "include": [
-    "src/**/*"
+    "src/**/*",
+    "tools/declarations.d.ts"
   ],
   "exclude": [
     "node_modules",
